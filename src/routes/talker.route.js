@@ -4,9 +4,9 @@ const fs = require('fs');
 const { HTTP_OK_STATUS } = require('../utils/status');
 const { handleFileReadError, handleJsonParseError } = require('../utils/errorHandlers');
 
-const talker = express.Router();
+const routeTalker = express.Router();
 
-talker.get('/', (_request, response) => {
+routeTalker.get('/', (_request, response) => {
   fs.readFile('src/talker.json', 'utf8', (error, data) => {
     if (error) {
       handleFileReadError(error, response);
@@ -25,4 +25,4 @@ talker.get('/', (_request, response) => {
   });
 });
 
-module.exports = talker;
+module.exports = routeTalker;

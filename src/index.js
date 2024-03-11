@@ -8,6 +8,7 @@ const PORT = process.env.PORT || '3001';
 
 app.use('/talker', require('./routes/talker.route'));
 app.use('/talker', require('./routes/talkerID.route')); 
+app.use('/login', require('./routes/login.route'));
 
 // não remova esse endpoint, e para o avaliador funcionar
 app.get('/', (_request, response) => {

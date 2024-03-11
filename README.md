@@ -20,5 +20,3 @@ O Projeto Talker Manager é uma aplicação para gerenciamento de palestrantes d
 - **JSON Web Tokens (JWT):** Utilizado para autenticação e autorização de usuários.
 - **ESLint:** Ferramenta para garantir a consistência e qualidade do código JavaScript.
 - **Jest:** Framework de testes para escrever e executar testes automatizados.
-
-Este README fornece uma visão geral do Projeto Talker Manager, suas funcionalidades e as tecnologias utilizadas em sua implementação. Para mais informações, consulte a documentação ou os arquivos do projeto.

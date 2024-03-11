@@ -2,7 +2,9 @@
 
 O Projeto Talker Manager é uma aplicação para gerenciamento de palestrantes desenvolvida como parte de um desafio prático. Ele permite realizar operações CRUD (Create, Read, Update, Delete) em registros de palestrantes, além de oferecer uma funcionalidade de pesquisa.
 
-![GIF](https://i.gifer.com/RiJ3.mp4)
+<p align="center">
+  <img src="https://www.gruporscom.com.br/wp-content/uploads/2021/10/Fundo-foto-1280x720-31.png" width="900" height="350">
+</p>
 
 ## Funcionalidades
 

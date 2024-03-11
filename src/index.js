@@ -6,6 +6,8 @@ const talkerIdRouter = require('./routes/talkerID.route');
 const loginRouter = require('./routes/login.route');
 const talkerPostRouter = require('./routes/talkerPost.route');
 const talkerPutRouter = require('./routes/TalkerPutID.route');
+const talkerDeleteRouter = require('./routes/talkerDelete.route');
+const talkerSearchRouter = require('./routes/talkerSearch.route');
 
 const app = express();
 app.use(express.json());
@@ -17,6 +19,8 @@ app.use('/talker', talkerIdRouter);
 app.use('/login', loginRouter);
 app.use('/talker', talkerPostRouter);
 app.use('/talker', talkerPutRouter); 
+app.use('/talker', talkerDeleteRouter);
+app.use('/talker/search', talkerSearchRouter);
 
 // não remova esse endpoint, e para o avaliador funcionar
 app.get('/', (_request, response) => {

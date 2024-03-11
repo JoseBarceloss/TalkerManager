@@ -1,10 +1,12 @@
 const express = require('express');
 const generateToken = require('../utils/generateToken');
 const { HTTP_OK_STATUS } = require('../utils/status');
+const { validateEmail } = require('../middlewares/validateEmail');
+const { validatePassword } = require('../middlewares/validatePassword');
 
-const router = express.Router();
+const login = express.Router();
 
-router.post('/', (request, response) => {
+login.post('/', validateEmail, validatePassword, (request, response) => {
   const { email, password } = request.body;
   const token = generateToken();
 
@@ -13,4 +15,4 @@ router.post('/', (request, response) => {
   }
 });
 
-module.exports = router;
+module.exports = login;

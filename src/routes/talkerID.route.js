@@ -3,9 +3,9 @@ const fs = require('fs').promises; // Importe o módulo 'fs' com suporte a Promi
 const { HTTP_OK_STATUS, HTTP_NOT_FOUND_STATUS } = require('../utils/status');
 const { handleFileReadError } = require('../utils/errorHandlers');
 
-const TalkerID = express.Router();
+const talkerID = express.Router();
 
-TalkerID.get('/:id', async (request, response) => {
+talkerID.get('/:id', async (request, response) => {
   try {
     const data = await fs.readFile('src/talker.json', 'utf8');
     const talkers = JSON.parse(data);
@@ -23,4 +23,4 @@ TalkerID.get('/:id', async (request, response) => {
   }
 });
 
-module.exports = TalkerID;
+module.exports = talkerID;

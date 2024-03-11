@@ -39,7 +39,7 @@ services:
     restart: always
     ports:
       # Expõe a porta padrão do banco de dados
-      - 3306:3306
+      - 3307:3306
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: TalkerDB
